@@ -1,0 +1,112 @@
+.container {
+    max-width: 30rem;
+    height: 50rem;
+    background-color: var(--dark-color);
+    margin: 5rem auto;
+    border-radius: 1rem;
+    position: relative;
+}
+.green__bg {
+    position: absolute;
+    width: 20rem;
+    height: 2rem;
+    background-color: var(--bg-color);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.top__icons__total {
+    width: 30rem;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.top__icons__total .time {
+    color: var(--light-color);
+    font-size: 1.2rem;
+}
+.top__icons--right i{
+    color: var(--light-color);
+    font-size: 1rem;
+}
+
+
+
+
+
+
+.bottom__icons__total {
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-color);
+    padding: 0 2rem;
+    margin-top: 1rem;
+}
+.display__prev, .display__current {
+    color: var(--light-color);
+    text-align: right;
+    padding: 1rem;
+}
+.display__prev {
+    margin-top: 5rem;
+    word-wrap: break-word;
+}
+.display__current {
+    font-size: 2.5rem;
+    word-wrap: break-word;
+}
+
+
+
+
+.grid--container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #2d2d2d;
+    height: 40rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.btn {
+   padding: 2rem; 
+   border: none;
+   outline: none;
+   background-color: transparent;
+   color: aliceblue;
+   font-size: 2.2rem;
+   transition: all 0.3s ease-in-out;
+   border-radius: 0.5rem;
+}
+.btn:hover {
+    background-color: #fff;
+    color: black;
+    
+}
+
+.green--color {
+    color: rgb(7, 82, 4);
+    font-weight: bold;
+}
+.red--color{
+    color: rgb(230, 90, 90);
+    font-weight: bold;
+}
+
+
+.theme {
+position: absolute;
+left: 2rem;
+bottom: 2rem;
+}
+.theme i {
+font-size: 2.5rem;
+padding: 1rem;
+background-color: rgba(255,255,255,0.5);
+border-radius: 50%;
+cursor: pointer;
+color: rgba(0,0,0,0.5);
+}
