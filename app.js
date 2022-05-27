@@ -63,9 +63,15 @@ let interval = setInterval(function (){
     const date = new Date();
     const hour = date.getHours();
     const minute = date.getMinutes();
-    const second = date.getSeconds();
     
-    time.innerHTML = `${hour} : ${minute}`;   
+    console.log(minute);
+    if (minute < 10) {
+        time.innerHTML = `${hour} : 0${minute}`;   
+
+    } else {
+        time.innerHTML = `${hour} : ${minute}`; 
+    }
+      
     
 },1000)
 
