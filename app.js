@@ -64,7 +64,7 @@ let interval = setInterval(function (){
     const hour = date.getHours();
     const minute = date.getMinutes();
     
-    console.log(minute);
+    
     if (minute < 10) {
         time.innerHTML = `${hour} : 0${minute}`;   
 
