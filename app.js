@@ -57,12 +57,17 @@ function themeFunc() {
 
 
 //time-function
-const date = new Date();
-const hour = date.getHours();
-const minute = date.getMinutes();
-const second = date.getSeconds();
+ 
+let interval = setInterval(function (){
 
-time.innerHTML = `${hour} : ${minute}`;
+    const date = new Date();
+    const hour = date.getHours();
+    const minute = date.getMinutes();
+    const second = date.getSeconds();
+    
+    time.innerHTML = `${hour} : ${minute}`;   
+    
+},1000)
 
 
 
@@ -73,14 +78,14 @@ btn_Numbers.forEach(number => {
     number.addEventListener('click', () => {
 
         
-        if (currentDisplay.textContent.length == 0 & number.textContent == 0) {
+        if (currentDisplay.textContent.length == 0 && number.textContent == 0) {
             currentDisplay.textContent = '';
         } else
         currentDisplay.textContent += number.innerHTML;
 
-    })
+    });
     
-})
+});
 
 // clear-function
 
@@ -94,10 +99,10 @@ btn_Clear.addEventListener('click',() => {
 //operations-function
 btn_Opearations.forEach(operatekey => {
     operatekey.addEventListener('click', () => {
-        prevDisplay.textContent += currentDisplay.textContent + operatekey.innerHTML  ;
+        prevDisplay.textContent += currentDisplay.textContent + operatekey.innerHTML;
         currentDisplay.textContent = '';
     })
-    });
+});
 
 
 //delete function 
