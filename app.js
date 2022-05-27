@@ -18,23 +18,41 @@ const gridContainer = document.querySelector('.grid--container');
 const container = document.querySelector('.container');
 const icons = document.querySelectorAll('i');
 
-
+let isDarkTheme = true;
 
 
 //theme-function
 function themeFunc() {
 
-    
-    gridContainer.style.backgroundColor = "#fff";
-    btn_Numbers.forEach(item => {
-        item.style.color = "#000";
-    });
-    container.style.backgroundColor = "#fff";
-    icons.forEach(item => {
-        item.style.color = "#000";
-    })
-    time.style.color = "#000"
-    
+    if (isDarkTheme) {
+
+        gridContainer.style.backgroundColor = "#fff";
+        btn_Numbers.forEach(item => {
+            item.style.color = "#000";
+        });
+        container.style.backgroundColor = "#fff";
+        icons.forEach(item => {
+            item.style.color = "#000";
+        })
+        time.style.color = "#000"
+        currentDisplay.style.color = '#000';
+        prevDisplay.style.color = '#000';
+        isDarkTheme = false;
+    }
+    else {
+        gridContainer.style.backgroundColor = "#2d2d2d";
+        btn_Numbers.forEach(item => {
+            item.style.color = "#fff";
+        });
+        container.style.backgroundColor = "#14141f";
+        icons.forEach(item => {
+            item.style.color = "#fff";
+        })
+        time.style.color = "#fff"
+        currentDisplay.style.color = '#fff';
+        prevDisplay.style.color = '#fff';
+        isDarkTheme = true;
+    }
 }
 
 

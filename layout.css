@@ -20,7 +20,7 @@
 .top__icons__total {
     width: 30rem;
     display: flex;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     justify-content: space-between;
     align-items: center;
     margin-top: 3rem;
@@ -98,6 +98,11 @@
     color: rgb(230, 90, 90);
     font-weight: bold;
 }
+.delete {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 
 
 .theme {
