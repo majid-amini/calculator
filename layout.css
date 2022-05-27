@@ -70,16 +70,19 @@
     height: 40rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    transition: all 0.3s ease-in-out;
 }
 .btn {
    padding: 2rem; 
    border: none;
    outline: none;
    background-color: transparent;
-   color: aliceblue;
    font-size: 2.2rem;
    transition: all 0.3s ease-in-out;
    border-radius: 0.5rem;
+}
+.btn--number {
+    color: var(--light-color);
 }
 .btn:hover {
     background-color: #fff;
